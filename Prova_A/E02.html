@@ -4,11 +4,13 @@
     // Por exemplo, em uma escola com 500 alunos, apenas 200 alunos possuem acesso à Internet, o que equivale a 40% destes 500 alunos.
 
     //ENTRADA
-
+    let alunos = Number(prompt(`Informe o número total de alunos da escola.`).trim());
+    let alunosCompiuter = Number(prompt(`Informe quantos tem acesso a internet.`).trim());
 
     //PROCESSAMENTO
     
 
     //SAÍDA
+    document.write(`${(alunosCompiuter/(alunos/100)).toFixed(1).replace(".",",")}% tem acesso a computador`);
 
 </script>

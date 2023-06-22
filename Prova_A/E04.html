@@ -4,12 +4,13 @@
     // Faça um script que leia o custo de fábrica do carro e calcule os custos adicionais, apresentando o custo final do carro ao comprador.
 
     //ENTRADA
-
+    let custo = Number(prompt(`Informe o custo de fábrica do carro.`).trim().replace(",","."));
     
     //PROCESSAMENTO
 
 
     //SAÍDA
+    document.write(`O custo final do carro será R$${(custo*1.73).toFixed(2).replace(".",",")}`)
 
 
 </script>

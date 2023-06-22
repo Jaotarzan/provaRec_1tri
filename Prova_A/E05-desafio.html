@@ -8,12 +8,15 @@
     */
 
     //ENTRADA
-
+    let salario = Number(prompt(`Informe o seu slário fixo.`).trim().replace(",","."));
+    let carros = Number(prompt(`Informe o número total de carros vendidos.`).trim().replace(",","."));
+    let valor = Number(prompt(`Informe o valor dos carros vendidos.`).trim().replace(",","."));
 
     //PROCESSAMENTO
 
 
     //SAÍDA
+    document.write(`O seu slário final será R$${(salario+carros*300+valor*0.05).toFixed(2).replace(".",",")}`)
 
 
 </script>
