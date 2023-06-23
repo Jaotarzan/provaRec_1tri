@@ -4,12 +4,13 @@
     // Faça um script que leia o custo de fábrica do celular e calcule os custos adicionais, apresentando o custo final do celular ao comprador.
 
     //ENTRADA
-
+    let custo = Number(prompt(`Informe o custo de fábrica do celular.`).trim().replace(",","."));
     
     //PROCESSAMENTO
 
 
     //SAÍDA
+    document.write(`O custo final do celular será R$${(custo*1.52).toFixed(2).replace(".",",")} <br> FÁBIO ME COLOCA NA FÁBRICA`)
 
 
 </script>

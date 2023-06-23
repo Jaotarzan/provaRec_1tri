@@ -3,12 +3,13 @@
     // Elaborar um programa para um estacionamento. O programa deve ler o valor para cada hora que o veículo ficará estacionado e o tempo que a pessoa utilizou em minutos. Informe o valor a ser pago pelo cliente, sabendo que as frações de hora devem ser cobradas de forma integral.
 
     //ENTRADA
-
+    let min = Number(prompt(`Informe os minutos usados do estacionamento.`).trim().replace(",","."));
+    let custo = Number(prompt(`Informe o custo a cada hora.`).trim().replace(",","."));
     
     //PROCESSAMENTO
 
 
     //SAÍDA
-
+    document.write(`você irá pagar R$${(Math.ceil(min/60)*custo).toFixed(2).replace(".",",")} <br> FÁBIO ME COLOCA NA FÁBRICA`);
 
 </script>
