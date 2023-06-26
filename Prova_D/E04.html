@@ -4,11 +4,13 @@
     // Por exemplo, entre 40 pessoas abordadas, 20 possuem impressora em casa, o que equivale a 50% destas 40 pessoas abordadas.
 
     //ENTRADA
-
+    let pessoas = Number(prompt(`Informe o número total de pessoas abordadas.`).trim());
+    let pessoasDaFabricaComImpressora = Number(prompt(`Informe quantos tem acesso a impressoras.`).trim());
 
     //PROCESSAMENTO
-    
+
 
     //SAÍDA
+    document.write(`${(pessoasDaFabricaComImpressora / (pessoas / 100)).toFixed(1).replace(".", ",")}% tem acesso a streaming <br> FÁBIO ME COLOCA NA FÁBRICA`);
 
 </script>

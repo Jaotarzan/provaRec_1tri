@@ -2,13 +2,15 @@
 <script>
     // Elaborar um programa para uma cadeira de massagem. O programa deve ler o valor para cada 3 minutos de uso da cadeira e o tempo que a pessoa utilizou em minutos. Informe o valor a ser pago pelo cliente, sabendo que as frações extras de 3 minutos devem ser cobradas de forma integral.
 
-    //ENTRADA
-
+     //ENTRADA
+     let min = Number(prompt(`Informe os minutos usados da cadeira de massagem.`).trim().replace(",","."));
+    let custo = Number(prompt(`Informe o custo a cada 3 min.`).trim().replace(",","."));
     
     //PROCESSAMENTO
 
 
     //SAÍDA
+    document.write(`você irá pagar R$${(Math.ceil(min/3)*custo).toFixed(2).replace(".",",")} <br> FÁBIO ME COLOCA NA FÁBRICA`);
 
 
 </script>
